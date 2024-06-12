@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:floor_tile",
+      "menu_category": {
+        "category": "construction",
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {}
+  }
+}

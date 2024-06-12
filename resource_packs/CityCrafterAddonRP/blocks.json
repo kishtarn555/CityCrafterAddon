@@ -1,0 +1,98 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"citycrafter:cardboard_box": {
+		"sound": "cloth",
+		"textures": {
+			"down": "cardboard_box_bottom",
+			"up": "cardboard_box_top",
+			"north": "cardboard_box_front",
+			"east": "cardboard_box_side",
+			"south": "cardboard_box_front",
+			"west": "cardboard_box_side"
+		}
+	},
+	"citycrafter:stove": {
+		"sound": "stone",
+		"textures": {
+			"down": "stove_bottom",
+			"up": "stove_top",
+			"north": "stove_front",
+			"east": "stove_side",
+			"south": "stove_side",
+			"west": "stove_side"
+		}
+	},
+	"citycrafter:concrete_aqua": {
+		"sound":"stone",
+		"textures":"concrete_aqua"
+	},
+	"citycrafter:concrete_pale_blue": {
+		"sound":"stone",
+		"textures":"concrete_pale_blue"
+	},
+	"citycrafter:concrete_pale_yellow": {
+		"sound":"stone",
+		"textures":"concrete_pale_yellow"
+	},
+	"citycrafter:granite_tile": {
+		"sound":"stone",
+		"textures":"granite_tile"
+	},
+	"citycrafter:floor_tile": {
+		"sound":"stone",
+		"textures":"floor_tile"
+	},
+	"citycrafter:floor_tile_sepia": {
+		"sound":"stone",
+		"textures":"floor_tile_sepia"
+	},
+	"citycrafter:floor_tile_sepia_stairs": {
+		"sound":"stone",
+		"textures":"floor_tile_sepia"
+	},
+	"citycrafter:floor_tile_blue": {
+		"sound":"stone",
+		"textures":"floor_tile_blue"
+	},
+	"citycrafter:anvil_base_block": {
+		"sound":"anvil",
+		"textures":"anvil_base"
+	},
+	"citycrafter:crate": {
+		"sound":"wood",
+		"textures":"cc_crate"
+	},
+	"citycrafter:train_track": {
+		"sound":"anvil"
+	},
+	"citycrafter:train_track_diagonal": {
+		"sound":"anvil"
+	},
+	"citycrafter:train_track_diagonal_b": {
+		"sound":"anvil"
+	},
+	"citycrafter:train_track_diagonal_full": {
+		"sound":"anvil"
+	},
+	"citycrafter:slab_clay": {
+		"sound":"gravel"
+	},
+	"citycrafter:microwave": {
+		"sound": "stone",
+		"textures": {
+			"down": "stove_bottom",
+			"up": "stove_top",
+			"north": "stove_front",
+			"east": "stove_side",
+			"south": "stove_side",
+			"west": "stove_side"
+		}
+	},
+	"citycrafter:concrete_off_white_pink": {
+		"textures":"concrete_off_white_pink"
+	}
+}

@@ -1,0 +1,66 @@
+pack.description=Addon para City Crafter
+pack.name=CityCrafterAddon RP
+tile.citycrafter:anvil_base_block.name=Bloque de Yunque
+tile.citycrafter:cardboard_box.name=Caja de cartón
+tile.citycrafter:crate.name=Caja de madera
+tile.citycrafter:stove.name=Estufa
+tile.citycrafter:floor_tile_blue.name=Losas de cerámica azul 
+tile.citycrafter:floor_tile.name=Losas de cerámica beige
+tile.citycrafter:floor_tile_sepia.name=Losas de cerámica crema
+tile.citycrafter:floor_tile_sepia_stairs.name=Escaleras de cerámica crema
+tile.citycrafter:glass_thin_wall.name=Pared delgada de cristal
+tile.citycrafter:plastic_glass_thin_wall.name=Pared delgada de cristal privado
+tile.citycrafter:iron_block_thin_wall.name=Pared delgada de bloque de hierro
+tile.citycrafter:granite_tile.name=Losas de granito
+tile.citycrafter:slab_clay.name=Losa de arcilla
+
+tile.citycrafter:concrete_aqua.name=Concreto aguamarina
+tile.citycrafter:concrete_pale_blue.name=Concrete azul pálido
+tile.citycrafter:concrete_pale_yellow.name=Concreto amarillo pálido
+tile.citycrafter:concrete_off_white_pink.name=Concreto blanco rosado
+
+tile.citycrafter:side_street_marking.name=Calcomanía marca lateral blanca
+tile.citycrafter:slab_side_street_marking.name=Losa de Calcomanía marca lateral blanca 
+
+tile.citycrafter:white_concrete_corner_fence.name=Valla de concreto blanco para esquinas
+tile.citycrafter:white_concrete_fence.name=Valla de concreto blanco
+tile.citycrafter:white_concrete_full_fence.name=Valla de concreto blanco completa 
+tile.citycrafter:white_concrete_lone_fence.name=Valla de concreto blanco solitaria 
+tile.citycrafter:white_concrete_single_fence.name=Valla de concreto blanco con conexión única 
+tile.citycrafter:white_concrete_through_fence.name=Valla de concreto blanco a través  
+tile.citycrafter:white_concrete_block_triple_fence.name=Valla de concreto blanco triple
+
+tile.citycrafter:iron_block_corner_fence.name=Calla de bloque de hierro para esquinas
+tile.citycrafter:iron_block_fence.name=Valla de bloque de hierro
+tile.citycrafter:iron_block_full_fence.name=Valla de bloque de hierro completa
+tile.citycrafter:iron_block_lone_fence.name=Valla de bloque de hierro solitaria
+tile.citycrafter:iron_block_single_fence.name=Valla de bloque de hierro con conexión única
+tile.citycrafter:iron_block_through_fence.name=Valla de bloque de hierro a través
+tile.citycrafter:iron_block_triple_fence.name=Valla de bloque de hierro triple
+
+tile.citycrafter:concrete_black_thin_wall.name=Pared delgada de concreto negro
+tile.citycrafter:concrete_red_thin_wall.name=Pared delgada de concreto rojo
+tile.citycrafter:concrete_green_thin_wall.name=Pared delgada de concreto verde
+tile.citycrafter:concrete_brown_thin_wall.name=Pared delgada de concreto marrón
+tile.citycrafter:concrete_blue_thin_wall.name=Pared delgada de concreto azul
+tile.citycrafter:concrete_purple_thin_wall.name=Pared delgada de concreto morado
+tile.citycrafter:concrete_cyan_thin_wall.name=Pared delgada de concreto cian
+tile.citycrafter:concrete_light_gray_thin_wall.name=Pared delgada de concreto gris claro
+tile.citycrafter:concrete_gray_thin_wall.name=Pared delgada de concreto gris
+tile.citycrafter:concrete_pink_thin_wall.name=Pared delgada de concreto rosa
+tile.citycrafter:concrete_lime_thin_wall.name=Pared delgada de concreto verde lima
+tile.citycrafter:concrete_yellow_thin_wall.name=Pared delgada de concreto amarillo
+tile.citycrafter:concrete_light_blue_thin_wall.name=Pared delgada de concreto azul claro
+tile.citycrafter:concrete_magenta_thin_wall.name=Pare delgada de concreto magenta
+tile.citycrafter:concrete_orange_thin_wall.name=Pared delgada de concreto naranja
+tile.citycrafter:concrete_white_thin_wall.name=Pared delgada de concreto blanco
+
+tile.citycrafter:concrete_aqua_thin_wall.name=Aqua Concrete Thin wall
+tile.citycrafter:concrete_pale_blue_thin_wall.name=Pale blue Concrete Thin wall
+tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pale yellow Concrete Thin wall
+
+tile.citycrafter:train_track.name=Train track
+tile.citycrafter:train_track_diagonal_full.name=Diagonal Train track
+tile.citycrafter:train_track_diagonal.name=Right Diagonal Train track
+tile.citycrafter:train_track_diagonal_b.name=Left Diagonal Train track
+

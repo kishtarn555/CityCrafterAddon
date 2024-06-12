@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.train_track",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4, 0, -8],
+							"size": [8, 4, 16],
+							"uv": {
+								"north": {"uv": [4, 12], "uv_size": [8, 4]},
+								"east": {"uv": [0, 12], "uv_size": [16, 4]},
+								"south": {"uv": [4, 12], "uv_size": [8, 4]},
+								"west": {"uv": [0, 12], "uv_size": [16, 4]},
+								"up": {"uv": [4, 0], "uv_size": [8, 16]},
+								"down": {"uv": [4, 16], "uv_size": [8, -16]}
+							}
+						},
+						{
+							"origin": [-4, 12, -8],
+							"size": [8, 4, 16],
+							"uv": {
+								"north": {"uv": [4, 0], "uv_size": [8, 4]},
+								"east": {"uv": [0, 0], "uv_size": [16, 4]},
+								"south": {"uv": [4, 0], "uv_size": [8, 4]},
+								"west": {"uv": [0, 0], "uv_size": [16, 4]},
+								"up": {"uv": [4, 0], "uv_size": [8, 16]},
+								"down": {"uv": [4, 16], "uv_size": [8, -16]}
+							}
+						},
+						{
+							"origin": [-2, 4, -8],
+							"size": [4, 8, 16],
+							"uv": {
+								"north": {"uv": [6, 4], "uv_size": [4, 8]},
+								"east": {"uv": [0, 4], "uv_size": [16, 8]},
+								"south": {"uv": [6, 4], "uv_size": [4, 8]},
+								"west": {"uv": [0, 4], "uv_size": [16, 8]},
+								"up": {"uv": [6, 0], "uv_size": [4, 16]},
+								"down": {"uv": [6, 16], "uv_size": [4, -16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

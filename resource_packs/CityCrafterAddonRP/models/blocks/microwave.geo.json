@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.microwave",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -6],
+							"size": [14, 8, 12],
+							"uv": {
+								"north": {"uv": [0, 24], "uv_size": [14, 8]},
+								"east": {"uv": [0, 16], "uv_size": [8, 8]},
+								"south": {"uv": [14, 24], "uv_size": [14, 8]},
+								"west": {"uv": [8, 16], "uv_size": [8, 8]},
+								"up": {"uv": [14, 8], "uv_size": [-14, -8]},
+								"down": {"uv": [14, 16], "uv_size": [-14, -8]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

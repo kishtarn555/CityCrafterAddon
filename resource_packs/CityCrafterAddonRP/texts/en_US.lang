@@ -1,0 +1,66 @@
+pack.description=Addon for City Crafter
+pack.name=CityCrafterAddon RP
+tile.citycrafter:anvil_base_block.name=Anvil block
+tile.citycrafter:cardboard_box.name=Cardboard box
+tile.citycrafter:crate.name=Crate
+tile.citycrafter:stove.name=Stove
+tile.citycrafter:floor_tile_blue.name=Blue ceramic tile
+tile.citycrafter:floor_tile.name=Beige ceramic tile
+tile.citycrafter:floor_tile_sepia.name=Cream ceramic tile
+tile.citycrafter:floor_tile_sepia_stairs.name=Cream ceramic tile stairs
+tile.citycrafter:glass_thin_wall.name=Glass thin wall
+tile.citycrafter:plastic_glass_thin_wall.name=Privacy glass thin wall
+tile.citycrafter:iron_block_thin_wall.name=Iron Block thin wall
+tile.citycrafter:granite_tile.name=Granite tiles
+tile.citycrafter:slab_clay.name=Clay slab
+
+tile.citycrafter:concrete_aqua.name=Aqua concrete
+tile.citycrafter:concrete_pale_blue.name=Pale blue concrete
+tile.citycrafter:concrete_pale_yellow.name=Pale yellow concrete
+tile.citycrafter:concrete_off_white_pink.name=Off white concrete
+
+tile.citycrafter:side_street_marking.name=Decal white side-marking
+tile.citycrafter:slab_side_street_marking.name=Slab decal white side-marking
+
+tile.citycrafter:white_concrete_corner_fence.name=White concrete corner fence
+tile.citycrafter:white_concrete_fence.name=White concrete fence
+tile.citycrafter:white_concrete_full_fence.name=White concrete full fence
+tile.citycrafter:white_concrete_lone_fence.name=White concrete lone fence
+tile.citycrafter:white_concrete_single_fence.name=White concrete single fence
+tile.citycrafter:white_concrete_through_fence.name=White concrete through fence
+tile.citycrafter:white_concrete_block_triple_fence.name=White concrete triple fence
+
+tile.citycrafter:iron_block_corner_fence.name=Iron block corner fence
+tile.citycrafter:iron_block_fence.name=Iron block fence
+tile.citycrafter:iron_block_full_fence.name=Iron block full fence
+tile.citycrafter:iron_block_lone_fence.name=Iron block lone fence
+tile.citycrafter:iron_block_single_fence.name=Iron block single fence
+tile.citycrafter:iron_block_through_fence.name=Iron block through fence
+tile.citycrafter:iron_block_triple_fence.name=Iron block triple fence
+
+tile.citycrafter:concrete_black_thin_wall.name=Black Concrete Thin wall
+tile.citycrafter:concrete_red_thin_wall.name=Red Concrete Thin wall
+tile.citycrafter:concrete_green_thin_wall.name=Green Concrete Thin wall
+tile.citycrafter:concrete_brown_thin_wall.name=Brown Concrete Thin wall
+tile.citycrafter:concrete_blue_thin_wall.name=Blue Concrete Thin wall
+tile.citycrafter:concrete_purple_thin_wall.name=Purple Concrete Thin wall
+tile.citycrafter:concrete_cyan_thin_wall.name=Cyan Concrete Thin wall
+tile.citycrafter:concrete_light_gray_thin_wall.name=Light Gray Concrete Thin wall
+tile.citycrafter:concrete_gray_thin_wall.name=Gray Concrete Thin wall
+tile.citycrafter:concrete_pink_thin_wall.name=Pink Concrete Thin wall
+tile.citycrafter:concrete_lime_thin_wall.name=Lime Concrete Thin wall
+tile.citycrafter:concrete_yellow_thin_wall.name=Yellow Concrete Thin wall
+tile.citycrafter:concrete_light_blue_thin_wall.name=Light Blue Concrete Thin wall
+tile.citycrafter:concrete_magenta_thin_wall.name=Magenta Concrete Thin wall
+tile.citycrafter:concrete_orange_thin_wall.name=Orange Concrete Thin wall
+tile.citycrafter:concrete_white_thin_wall.name=White Concrete Thin wall
+
+tile.citycrafter:concrete_aqua_thin_wall.name=Aqua Concrete Thin wall
+tile.citycrafter:concrete_pale_blue_thin_wall.name=Pale blue Concrete Thin wall
+tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pale yellow Concrete Thin wall
+
+tile.citycrafter:train_track.name=Train track
+tile.citycrafter:train_track_diagonal_full.name=Diagonal Train track
+tile.citycrafter:train_track_diagonal.name=Right Diagonal Train track
+tile.citycrafter:train_track_diagonal_b.name=Left Diagonal Train track
+

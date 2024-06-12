@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:bougainvillea",
+      "menu_category": {
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {
+      "minecraft:geometry":"geometry.cc_crossplane", 
+      "minecraft:material_instances": { 
+        "*": {
+          "texture":"bougainvillea",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:collision_box":false
+    }
+  }
+}

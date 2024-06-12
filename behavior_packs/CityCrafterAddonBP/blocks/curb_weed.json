@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:curb_weed",
+      "menu_category": {
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {
+      "minecraft:geometry":"geometry.cc_crossplane", 
+      "minecraft:material_instances": { 
+        "*": {
+          "texture":"curb_weed",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [-4, 0, -4],
+        "size": [8, 13, 8]
+      },
+      "minecraft:collision_box":false
+    }
+  }
+}

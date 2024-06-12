@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"FerYHec"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			30
+		],
+		"uuid": "79f72148-4ea1-48ce-ac20-746fab801bd9",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "85e80faf-5c5a-40e8-8145-de7aa0767859",
+			"version": [
+				1,
+				1,
+				0
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:sunken_stone",
+      "menu_category": {
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {
+      "minecraft:geometry":"geometry.cc_sunken_block", 
+      "minecraft:material_instances": { 
+        "*": {
+          "texture":"stone"
+        }
+      },
+      "minecraft:map_color":"#848383",
+      "minecraft:collision_box":{
+        "origin":[-8, 0, -8],
+        "size": [16, 13, 16]
+      },
+      "minecraft:selection_box":{
+        "origin":[-8, 0, -8],
+        "size": [16, 13, 16]
+      }
+    }
+  }
+}

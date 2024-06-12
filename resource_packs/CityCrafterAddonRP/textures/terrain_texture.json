@@ -1,0 +1,80 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "CityCrafterAddon",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"cardboard_box_bottom": {
+			"textures": "textures/blocks/cardboard_box_bottom"
+		}
+		,
+		"cardboard_box_front": {
+			"textures": "textures/blocks/cardboard_box_front"
+		},
+		"cardboard_box_side": {
+			"textures": "textures/blocks/cardboard_box_side"
+		},
+		"cardboard_box_top": {
+			"textures": "textures/blocks/cardboard_box_top"
+		},
+		"stove_bottom": {
+			"textures": "textures/blocks/stove_bottom"
+		}
+		,
+		"stove_front": {
+			"textures": "textures/blocks/stove_front"
+		},
+		"stove_side": {
+			"textures": "textures/blocks/stove_side"
+		},
+		"stove_top": {
+			"textures": "textures/blocks/stove_top"
+		},
+		"microwave": {
+			"textures": "textures/blocks/microwave"
+		},
+		"mushroom_skin": {
+			"textures":"textures/blocks/mushroom_block_skin_stem"
+		},
+		"concrete_aqua": {
+			"textures":"textures/blocks/copyrighted/concrete_aqua"
+		},
+		"concrete_pale_blue": {
+			"textures":"textures/blocks/copyrighted/concrete_pale_blue"
+		},
+		"concrete_pale_yellow": {
+			"textures":"textures/blocks/copyrighted/concrete_pale_yellow"
+		},
+		"granite_tile": {
+			"textures":"textures/blocks/copyrighted/granite_tile"
+		},
+		"floor_tile": {
+			"textures":"textures/blocks/floor_tile"
+		},
+		"floor_tile_sepia": {
+			"textures":"textures/blocks/floor_tile_sepia"
+		},
+		"floor_tile_blue": {
+			"textures":"textures/blocks/floor_tile_blue"
+		},
+		"cc_crate": {
+			"textures":"textures/blocks/crate_side"
+		},
+		"plastic_glass": {
+			"textures":"textures/blocks/plastic_glass"
+		},
+		"curb_weed": {
+			"textures": "textures/blocks/curbweed"
+		},
+		"bougainvillea": {
+			"textures": "textures/blocks/bougainvillea"
+		},
+		"side_street_marking": {
+			"textures":"textures/blocks/side_street_marking"
+		},
+		"concrete_off_white_pink": {
+			"textures":"textures/blocks/copyrighted/concrete_off_white_pink"
+		}
+		
+	}
+}

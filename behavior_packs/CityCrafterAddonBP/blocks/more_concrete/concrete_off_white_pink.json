@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:concrete_off_white_pink",
+      "menu_category": {
+        "category": "construction",
+        "group":"itemGroup.name.concrete",
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {
+      "minecraft:map_color": "#f2d8dc"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:iron_block_lone_fence",
+      "menu_category": {
+        "category": "construction",
+        "group":"itemGroup.name.fence",
+        "is_hidden_in_commands": false 
+      }
+    },
+    "components": {
+      "minecraft:material_instances": { 
+        "*":{
+          "texture":"iron_block"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.fence_nesw",
+        "bone_visibility": {
+          "north_connection": false,
+          "east_connection": false,
+          "west_connection": false,
+          "south_connection": false
+        }
+      }
+  
+      
+    }
+  }
+}

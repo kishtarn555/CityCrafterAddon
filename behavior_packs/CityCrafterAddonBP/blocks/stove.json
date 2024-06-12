@@ -1,0 +1,74 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:stove",
+      "menu_category": {
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"], 
+          "y_rotation_offset": 180 
+        }
+      }
+    },
+    "components": {
+      "minecraft:light_dampening":15,
+      "minecraft:geometry":"geometry.my_unit_block", 
+      "minecraft:material_instances": { 
+        "north": { 
+         "texture": "stove_front" 
+        }, 
+        "south": { 
+         "texture": "stove_side" 
+        }, 
+        "east": { 
+         "texture": "stove_side" 
+        }, 
+        "west": { 
+         "texture": "stove_side" 
+        }, 
+        "up": { 
+         "texture": "stove_top" 
+        } ,
+        "down": { 
+         "texture": "stove_bottom" 
+        } 
+      } 
+  
+      
+    },
+    "permutations": [
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ]
+  }
+}

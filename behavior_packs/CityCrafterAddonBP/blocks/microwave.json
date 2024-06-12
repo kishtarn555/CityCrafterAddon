@@ -1,0 +1,67 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:microwave",
+      "menu_category": {
+        "category": "construction",
+        "is_hidden_in_commands": false 
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"], 
+          "y_rotation_offset": 180 
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry":"geometry.microwave", 
+      "minecraft:material_instances": { 
+        "*":{
+          "texture":"microwave"
+        }
+      },
+      "minecraft:collision_box": {        
+        "origin": [-7, 0, -6],
+        "size": [14, 8, 12]        
+      },
+      "minecraft:selection_box": {        
+        "origin": [-7, 0, -6],
+        "size": [14, 8, 12]        
+      }
+    
+  
+      
+    },
+    "permutations": [
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ]
+  }
+}
