@@ -94,5 +94,9 @@
 	},
 	"citycrafter:concrete_off_white_pink": {
 		"textures":"concrete_off_white_pink"
+	},
+	"citycrafter:white_bricks": {
+		"textures":"white_bricks"
 	}
+
 }

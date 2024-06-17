@@ -74,6 +74,9 @@
 		},
 		"concrete_off_white_pink": {
 			"textures":"textures/blocks/copyrighted/concrete_off_white_pink"
+		},
+		"white_bricks": {
+			"textures" : "textures/blocks/white_bricks"
 		}
 		
 	}
