@@ -77,6 +77,12 @@
 		},
 		"white_bricks": {
 			"textures" : "textures/blocks/white_bricks"
+		},
+		"iron_door_bottom": {
+			"textures" : "textures/blocks/doors/iron_door_bottom"
+		},
+		"iron_door_top": {
+			"textures" : "textures/blocks/doors/iron_door_top"
 		}
 		
 	}
