@@ -6,8 +6,7 @@
 	"texture_data": {
 		"cardboard_box_bottom": {
 			"textures": "textures/blocks/cardboard_box_bottom"
-		}
-		,
+		},
 		"cardboard_box_front": {
 			"textures": "textures/blocks/cardboard_box_front"
 		},
@@ -19,8 +18,7 @@
 		},
 		"stove_bottom": {
 			"textures": "textures/blocks/stove_bottom"
-		}
-		,
+		},
 		"stove_front": {
 			"textures": "textures/blocks/stove_front"
 		},
@@ -34,34 +32,34 @@
 			"textures": "textures/blocks/microwave"
 		},
 		"mushroom_skin": {
-			"textures":"textures/blocks/mushroom_block_skin_stem"
+			"textures": "textures/blocks/mushroom_block_skin_stem"
 		},
 		"concrete_aqua": {
-			"textures":"textures/blocks/copyrighted/concrete_aqua"
+			"textures": "textures/blocks/copyrighted/concrete_aqua"
 		},
 		"concrete_pale_blue": {
-			"textures":"textures/blocks/copyrighted/concrete_pale_blue"
+			"textures": "textures/blocks/copyrighted/concrete_pale_blue"
 		},
 		"concrete_pale_yellow": {
-			"textures":"textures/blocks/copyrighted/concrete_pale_yellow"
+			"textures": "textures/blocks/copyrighted/concrete_pale_yellow"
 		},
 		"granite_tile": {
-			"textures":"textures/blocks/copyrighted/granite_tile"
+			"textures": "textures/blocks/copyrighted/granite_tile"
 		},
 		"floor_tile": {
-			"textures":"textures/blocks/floor_tile"
+			"textures": "textures/blocks/floor_tile"
 		},
 		"floor_tile_sepia": {
-			"textures":"textures/blocks/floor_tile_sepia"
+			"textures": "textures/blocks/floor_tile_sepia"
 		},
 		"floor_tile_blue": {
-			"textures":"textures/blocks/floor_tile_blue"
+			"textures": "textures/blocks/floor_tile_blue"
 		},
 		"cc_crate": {
-			"textures":"textures/blocks/crate_side"
+			"textures": "textures/blocks/crate_side"
 		},
 		"plastic_glass": {
-			"textures":"textures/blocks/plastic_glass"
+			"textures": "textures/blocks/plastic_glass"
 		},
 		"curb_weed": {
 			"textures": "textures/blocks/curbweed"
@@ -70,32 +68,49 @@
 			"textures": "textures/blocks/bougainvillea"
 		},
 		"side_street_marking": {
-			"textures":"textures/blocks/side_street_marking"
+			"textures": "textures/blocks/side_street_marking"
 		},
 		"concrete_off_white_pink": {
-			"textures":"textures/blocks/copyrighted/concrete_off_white_pink"
+			"textures": "textures/blocks/copyrighted/concrete_off_white_pink"
 		},
 		"white_bricks": {
-			"textures" : "textures/blocks/white_bricks"
+			"textures": "textures/blocks/white_bricks"
 		},
 		"iron_door_bottom": {
-			"textures" : "textures/blocks/doors/iron_door_bottom"
+			"textures": "textures/blocks/doors/iron_door_bottom"
 		},
 		"iron_door_top": {
-			"textures" : "textures/blocks/doors/iron_door_top"
+			"textures": "textures/blocks/doors/iron_door_top"
 		},
 		"arch_door_bottom": {
-			"textures" : "textures/blocks/doors/arch_door_bottom"
+			"textures": "textures/blocks/doors/arch_door_bottom"
 		},
 		"arch_door_top": {
-			"textures" : "textures/blocks/doors/arch_door_top"
+			"textures": "textures/blocks/doors/arch_door_top"
 		},
 		"woody_door_bottom": {
-			"textures" : "textures/blocks/doors/woody_door_bottom"
+			"textures": "textures/blocks/doors/woody_door_bottom"
 		},
 		"woody_door_top": {
-			"textures" : "textures/blocks/doors/woody_door_top"
+			"textures": "textures/blocks/doors/woody_door_top"
+		},
+		"cc_planks_oak": {
+			"textures": "textures/blocks/planks_oak"
+		},
+		"cc_planks_spruce": {
+			"textures": "textures/blocks/planks_spruce"
+		},
+		"cc_planks_birch": {
+			"textures": "textures/blocks/planks_birch"
+		},
+		"cc_planks_jungle": {
+			"textures": "textures/blocks/planks_jungle"
+		},
+		"cc_planks_acacia": {
+			"textures": "textures/blocks/planks_acacia"
+		},
+		"cc_planks_big_oak": {
+			"textures": "textures/blocks/planks_big_oak"
 		}
-		
 	}
 }
