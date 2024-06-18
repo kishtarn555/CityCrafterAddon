@@ -1,0 +1,7 @@
+{
+    "identifier": "citycrafter:iron_gate2",
+    "texture": {
+        "top": "iron_door_top",
+        "bottom": "iron_door_bottom"
+    }
+}

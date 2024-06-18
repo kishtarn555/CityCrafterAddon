@@ -37,6 +37,24 @@
 				1,
 				0
 			]
+		},
+		{
+			"description": "Script resources",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "093b8524-34e0-4fe2-9552-4e7ea658a944",
+			"version": [
+				1,
+				2,
+				0
+			],
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
 		}
 	]
 }

@@ -13,6 +13,7 @@ const del = require("del");
 const os = require("os");
 const spawn = require("child_process").spawn;
 const sourcemaps = require("gulp-sourcemaps");
+const jsonTransform = require('gulp-json-transform');
 
 const worldsFolderName = useMinecraftDedicatedServer ? "worlds" : "minecraftWorlds";
 
@@ -21,9 +22,9 @@ const activeWorldFolderName = useMinecraftDedicatedServer ? "Bedrock level" : bp
 const mcdir = useMinecraftDedicatedServer
   ? dedicatedServerPath
   : os.homedir() +
-    (useMinecraftPreview
-      ? "/AppData/Local/Packages/Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe/LocalState/games/com.mojang/"
-      : "/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/");
+  (useMinecraftPreview
+    ? "/AppData/Local/Packages/Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe/LocalState/games/com.mojang/"
+    : "/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/");
 
 function clean_build(callbackFunction) {
   del(["build/behavior_packs/", "build/resource_packs/"]).then(
@@ -44,7 +45,120 @@ function copy_resource_packs() {
   return gulp.src(["resource_packs/**/*"]).pipe(gulp.dest("build/resource_packs"));
 }
 
+function getDoorPermutation(data, facing, upper_block_bit, door_hinge_bit, open_bit) {
+
+  const geometry = {
+    "identifier": upper_block_bit ? "geometry.cc_door_down" : "geometry.cc_door_up",
+    "bone_visibility": {
+      "normal": "!q.block_state('cc:door_hinge_bit') != q.block_state('cc:open_bit')",
+      "back": "q.block_state('cc:door_hinge_bit') != q.block_state('cc:open_bit')"
+    }
+
+  };
+  const rots = {
+    "north": 0,
+    "east": -90,
+    "west": 90,
+    "south": 180
+  };
+  const rotY = rots[facing];
+  const dY = 90 * (door_hinge_bit ? 1 : -1) * (open_bit ? 1 : 0);
+
+
+  const perm = {
+    "condition": `q.block_state('minecraft:cardinal_direction') == '${facing}' && q.block_state('cc:upper_block_bit') == ${upper_block_bit} && q.block_state('cc:door_hinge_bit') == ${door_hinge_bit} && q.block_state('cc:open_bit') == ${open_bit}`,
+    "components": {
+      "minecraft:geometry": geometry,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": upper_block_bit ? data.texture.top : data.texture.bottom,
+          "render_method": "blend"
+        }
+      },
+      "minecraft:transformation": { "rotation": [0, rotY + dY, 0] },
+    }
+  };
+
+  return perm;
+}
+
+function getDoorJSON(data) {
+
+  permutations = [
+  ]
+  for (let i = 0; i < 8; i++) {
+    permutations.push(
+      getDoorPermutation(data, "north", (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+    );
+    permutations.push(
+      getDoorPermutation(data, "east", (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+    );
+    permutations.push(
+      getDoorPermutation(data, "south", (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+    );
+    permutations.push(
+      getDoorPermutation(data, "west", (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+    );
+  }
+
+  const object = {
+    "format_version": "1.20.60",
+    "minecraft:block": {
+      "description": {
+        "identifier": data.identifier,
+        "menu_category": {
+          "category": "construction",
+          "is_hidden_in_commands": false
+        },
+        "traits": {
+          "minecraft:placement_direction": {
+            "enabled_states": ["minecraft:cardinal_direction"],
+            "y_rotation_offset": 180
+          }
+        },
+        "states": {
+          "cc:upper_block_bit": [false, true],
+          "cc:door_hinge_bit": [false, true],
+          "cc:open_bit": [false, true]
+        }
+      },
+      "components": {
+        // "minecraft:collision_box": {
+        //   "origin": [-8, 0, -8],
+        //   "size": [16, 16, 3]
+        // },
+        "minecraft:collision_box": false,
+        "minecraft:selection_box": {
+          "origin": [-8, 0, -8],
+          "size": [16, 16, 3]
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "tag:cc_door": {}
+      },
+      "permutations": permutations
+    }
+  };
+  return object
+}
+
+
+function build_doors() {
+  return gulp.src("gens/doors/*.json")
+    .pipe(jsonTransform(function (data, file) {
+      return getDoorJSON(data);
+    }))
+    .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/doors/'))
+}
+
 const copy_content = gulp.parallel(copy_behavior_packs, copy_resource_packs);
+
+const buildDoors = gulp.parallel(build_doors);
 
 function compile_scripts() {
   return gulp
@@ -69,7 +183,7 @@ function compile_scripts() {
     .pipe(gulp.dest("build/behavior_packs/" + bpfoldername + "BP/scripts"));
 }
 
-const build = gulp.series(clean_build, copy_content, compile_scripts);
+const build = gulp.series(clean_build, copy_content, buildDoors, compile_scripts);
 
 function clean_localmc(callbackFunction) {
   if (!bpfoldername || !bpfoldername.length || bpfoldername.length < 2) {
@@ -78,7 +192,7 @@ function clean_localmc(callbackFunction) {
     return;
   }
 
-  del([mcdir + "development_behavior_packs/" + bpfoldername+"BP", mcdir + "development_resource_packs/" + bpfoldername+"RP"], {
+  del([mcdir + "development_behavior_packs/" + bpfoldername + "BP", mcdir + "development_resource_packs/" + bpfoldername + "RP"], {
     force: true,
   }).then(
     (value) => {
@@ -94,13 +208,13 @@ function deploy_localmc_behavior_packs() {
   console.log("Deploying to '" + mcdir + "development_behavior_packs/" + bpfoldername + "BP'");
   return gulp
     .src(["build/behavior_packs/" + bpfoldername + "BP/**/*"])
-    .pipe(gulp.dest(mcdir + "development_behavior_packs/" + bpfoldername+"BP"));
+    .pipe(gulp.dest(mcdir + "development_behavior_packs/" + bpfoldername + "BP"));
 }
 
 function deploy_localmc_resource_packs() {
   return gulp
     .src(["build/resource_packs/" + bpfoldername + "RP/**/*"])
-    .pipe(gulp.dest(mcdir + "development_resource_packs/" + bpfoldername+"RP"));
+    .pipe(gulp.dest(mcdir + "development_resource_packs/" + bpfoldername + "RP"));
 }
 
 function getTargetWorldPath() {

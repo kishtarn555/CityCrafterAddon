@@ -14,7 +14,8 @@
           }
         },
         "states": {
-            "cc:upper_block_bit":[false, true]
+            "cc:upper_block_bit":[false, true],
+            "cc:door_hinge_bit":[false, true]
         }
       },
       "components": {
@@ -26,6 +27,13 @@
           "origin": [-8, 0, -8],
           "size": [16, 16, 3]        
         },
+        "minecraft:placement_filter":{
+            "conditions": [
+                {
+                    "allowed_faces": ["up"]
+                }
+            ]
+        },
         "tag:cc_door": {}
       
     
@@ -36,8 +44,14 @@
         {
           "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('cc:upper_block_bit') == true",
           "components": {
-            "minecraft:geometry":"geometry.cc_door_down", 
-            "minecraft:transformation": { "rotation": [0, 0, 0] },
+            "minecraft:geometry":{
+                "identifier":"geometry.cc_door_down",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+            }, 
+            "minecraft:transformation": { "rotation": [0, 0, 0]},
             "minecraft:material_instances": {  "*":{ 
                 "texture":"iron_door_top",
                 "render_method":"blend" 
@@ -48,7 +62,13 @@
         {
           "condition": "q.block_state('minecraft:cardinal_direction') == 'west'  && q.block_state('cc:upper_block_bit') == true",
           "components": {
-            "minecraft:geometry":"geometry.cc_door_down",
+            "minecraft:geometry":{
+                "identifier":"geometry.cc_door_down",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+            },
             "minecraft:transformation": { "rotation": [0, 90, 0] },
             "minecraft:material_instances": {  "*":{ 
                 "texture":"iron_door_top",
@@ -60,7 +80,13 @@
         {
           "condition": "q.block_state('minecraft:cardinal_direction') == 'south'  && q.block_state('cc:upper_block_bit') == true",
           "components": {
-            "minecraft:geometry":"geometry.cc_door_down",
+            "minecraft:geometry":{
+                "identifier":"geometry.cc_door_down",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+            },
             "minecraft:transformation": { "rotation": [0, 180, 0] },
             "minecraft:material_instances": {  "*":{ 
                 "texture":"iron_door_top",
@@ -72,7 +98,13 @@
         {
           "condition": "q.block_state('minecraft:cardinal_direction') == 'east'  && q.block_state('cc:upper_block_bit') == true",
           "components": {
-            "minecraft:geometry":"geometry.cc_door_down",
+            "minecraft:geometry":{
+                "identifier":"geometry.cc_door_down",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+            },
             "minecraft:transformation": { "rotation": [0, -90, 0] },
             "minecraft:material_instances": {  "*":{ 
                 "texture":"iron_door_top",
@@ -85,7 +117,13 @@
         {
             "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('cc:upper_block_bit') == false",
             "components": {
-              "minecraft:geometry":"geometry.cc_door_up",
+              "minecraft:geometry":{
+                "identifier":"geometry.cc_door_up",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+              },
               "minecraft:transformation": { "rotation": [0, 0, 0] },
               "minecraft:material_instances": {  "*":{ 
                     "texture":"iron_door_bottom",
@@ -97,7 +135,13 @@
           {
             "condition": "q.block_state('minecraft:cardinal_direction') == 'west'  && q.block_state('cc:upper_block_bit') == false",
             "components": {
-              "minecraft:geometry":"geometry.cc_door_up",
+              "minecraft:geometry":{
+                "identifier":"geometry.cc_door_up",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+              },
               "minecraft:transformation": { "rotation": [0, 90, 0] },
               "minecraft:material_instances": {  "*":{ 
                     "texture":"iron_door_bottom",
@@ -109,7 +153,13 @@
           {
             "condition": "q.block_state('minecraft:cardinal_direction') == 'south'  && q.block_state('cc:upper_block_bit') == false",
             "components": {
-              "minecraft:geometry":"geometry.cc_door_up",
+              "minecraft:geometry":{
+                "identifier":"geometry.cc_door_up",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+              },
               "minecraft:transformation": { "rotation": [0, 180, 0] },
               "minecraft:material_instances": {  "*":{ 
                     "texture":"iron_door_bottom",
@@ -121,7 +171,13 @@
           {
             "condition": "q.block_state('minecraft:cardinal_direction') == 'east'  && q.block_state('cc:upper_block_bit') == false",
             "components": {
-              "minecraft:geometry":"geometry.cc_door_up",
+              "minecraft:geometry":{
+                "identifier":"geometry.cc_door_up",
+                "bone_visibility": {
+                    "normal": "!q.block_state('cc:door_hinge_bit')",
+                    "back": "q.block_state('cc:door_hinge_bit')"
+                }
+              },
               "minecraft:transformation": { "rotation": [0, -90, 0] },
               "minecraft:material_instances": {  "*":{ 
                     "texture":"iron_door_bottom",
