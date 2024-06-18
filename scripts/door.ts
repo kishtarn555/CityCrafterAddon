@@ -1,6 +1,9 @@
 import { Block, BlockPermutation, ItemUseOnAfterEvent, ItemUseOnBeforeEvent, PlayerBreakBlockBeforeEvent, PlayerDimensionChangeAfterEvent, PlayerPlaceBlockAfterEvent, system, world } from "@minecraft/server";
 
-const doors :string[]= ["citycrafter:iron_gate2"]    
+const doors :string[]= [
+    "citycrafter:iron_gate2",
+    "citycrafter:arch_door",
+]    
 
 function OnPlaceDoor(e:PlayerPlaceBlockAfterEvent) {
     

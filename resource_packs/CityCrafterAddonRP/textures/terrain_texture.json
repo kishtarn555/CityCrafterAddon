@@ -83,6 +83,12 @@
 		},
 		"iron_door_top": {
 			"textures" : "textures/blocks/doors/iron_door_top"
+		},
+		"arch_door_bottom": {
+			"textures" : "textures/blocks/doors/arch_door_bottom"
+		},
+		"arch_door_top": {
+			"textures" : "textures/blocks/doors/arch_door_top"
 		}
 		
 	}
