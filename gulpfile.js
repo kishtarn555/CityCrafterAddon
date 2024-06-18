@@ -108,6 +108,7 @@ function getDoorJSON(data) {
         "identifier": data.identifier,
         "menu_category": {
           "category": "construction",
+          "group": "itemGroup.name.door",
           "is_hidden_in_commands": false
         },
         "traits": {
