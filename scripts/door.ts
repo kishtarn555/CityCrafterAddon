@@ -4,6 +4,7 @@ const doors :string[]= [
     "citycrafter:iron_gate2",
     "citycrafter:arch_door",
     "citycrafter:woody_door",
+    "citycrafter:black_door",
 ]    
 
 function OnPlaceDoor(e:PlayerPlaceBlockAfterEvent) {

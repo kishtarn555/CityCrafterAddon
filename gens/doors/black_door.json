@@ -1,0 +1,7 @@
+{
+    "identifier": "citycrafter:black_door",
+    "texture": {
+        "top": "cc_black_door_top",
+        "bottom": "cc_black_door_bottom"
+    }
+}

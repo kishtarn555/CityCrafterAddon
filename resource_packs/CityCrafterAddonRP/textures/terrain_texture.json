@@ -94,6 +94,12 @@
 		"woody_door_top": {
 			"textures": "textures/blocks/doors/woody_door_top"
 		},
+		"cc_black_door_bottom": {
+			"textures": "textures/blocks/doors/black_door_bottom"
+		},
+		"cc_black_door_top": {
+			"textures": "textures/blocks/doors/black_door_top"
+		},
 		"cc_planks_oak": {
 			"textures": "textures/blocks/planks_oak"
 		},
