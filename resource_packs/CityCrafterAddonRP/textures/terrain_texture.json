@@ -89,6 +89,12 @@
 		},
 		"arch_door_top": {
 			"textures" : "textures/blocks/doors/arch_door_top"
+		},
+		"woody_door_bottom": {
+			"textures" : "textures/blocks/doors/woody_door_bottom"
+		},
+		"woody_door_top": {
+			"textures" : "textures/blocks/doors/woody_door_top"
 		}
 		
 	}
