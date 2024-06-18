@@ -1,0 +1,7 @@
+{
+    "identifier": "citycrafter:woody_door",
+    "texture": {
+        "top": "arch_door_top",
+        "bottom": "arch_door_bottom"
+    }
+}

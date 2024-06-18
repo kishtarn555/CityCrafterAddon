@@ -3,6 +3,7 @@ import { Block, BlockPermutation, ItemUseOnAfterEvent, ItemUseOnBeforeEvent, Pla
 const doors :string[]= [
     "citycrafter:iron_gate2",
     "citycrafter:arch_door",
+    "citycrafter:woody_door",
 ]    
 
 function OnPlaceDoor(e:PlayerPlaceBlockAfterEvent) {
