@@ -4,7 +4,7 @@
     "description": {
       "identifier": "citycrafter:iron_block_full_fence",
       "menu_category": {
-        "category": "construction",
+        "category": "none",
         "group": "itemGroup.name.fence",
         "is_hidden_in_commands": false
       }
