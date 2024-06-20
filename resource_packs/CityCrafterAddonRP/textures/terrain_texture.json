@@ -70,6 +70,10 @@
 		"side_street_marking": {
 			"textures": "textures/blocks/side_street_marking"
 		},
+		"side_street_marking_yellow": {
+			"textures": "textures/blocks/side_street_marking_yellow"
+
+		},
 		"concrete_off_white_pink": {
 			"textures": "textures/blocks/copyrighted/concrete_off_white_pink"
 		},
