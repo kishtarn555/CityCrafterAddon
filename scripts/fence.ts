@@ -13,12 +13,17 @@ function UpdateFence(block:Block) {
             return;
         if (fences.indexOf(block.typeId) === -1) 
             return;
+        if (block.permutation.getState("citycrafter:freeze")) {
+            //This block is frozen
+            return;
+        }
         
         let states= {
             "citycrafter:n":false,
             "citycrafter:e":false,
             "citycrafter:s":false,
             "citycrafter:w":false,
+            "citycrafter:freeze":false,
         }
         if (block.north()?.isValid() && (!block.north()?.isAir && !block.north()?.isLiquid)) {
             states["citycrafter:n"] = true;

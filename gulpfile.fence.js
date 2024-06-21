@@ -61,7 +61,8 @@ function getFenceJSON(data) {
                     "citycrafter:n": [false, true],
                     "citycrafter:e": [false, true],
                     "citycrafter:s": [false, true],
-                    "citycrafter:w": [false, true]
+                    "citycrafter:w": [false, true],
+                    "citycrafter:freeze": [false, true],
                 }
             },
             "components": {
