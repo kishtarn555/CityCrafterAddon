@@ -129,22 +129,22 @@ function OnUseDoor(e: ItemUseOnBeforeEvent) {
     if ( doors.indexOf(e.block.typeId) === -1) {
         return;
     }
-
-    if (lock) return;
-    if (e.itemStack.typeId === e.block.typeId) {
-        
-        lock = true;
-        system.run(()=>{ 
-            if (e.source.isSneaking) {               
-                ChangeHingeBit(e.block);
-            } else {
-                ChangeOpenBit(e.block);
-            }
-            system.runTimeout(()=>lock = false, 5);
-        });
-
-
+    if (e.source.isSneaking) {    
+        return;
     }
+    e.cancel=true;     
+    if (lock) { 
+        return;
+    }
+    lock = true;
+    system.run(()=>{             
+        ChangeOpenBit(e.block);            
+        system.runTimeout(()=>lock = false, 5);
+    });
+    
+
+
+    
 
 }
 
