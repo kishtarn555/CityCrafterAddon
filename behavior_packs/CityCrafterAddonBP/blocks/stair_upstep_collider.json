@@ -1,0 +1,93 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "citycrafter:stair_upstep",
+            "menu_category": {
+                "group":"itemGroup.name.stairs",
+                "category": "construction",
+                "is_hidden_in_commands": false
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:light_dampening": 0,
+            "minecraft:geometry": "geometry.citycrafter_none",
+            "minecraft:material_instances": {
+                "*": {"texture": "grass"}
+            },
+            "minecraft:collision_box" :{
+                "origin": [
+                    -8,0,-8
+                ],
+                "size": [
+                    16,0.1,8
+                ]
+            },
+            "minecraft:selection_box" :{
+                "origin": [
+                    -8,0,-8
+                ],
+                "size": [
+                    16,1,8
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            -90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
