@@ -15,6 +15,7 @@ const spawn = require("child_process").spawn;
 const sourcemaps = require("gulp-sourcemaps");
 const jsonTransform = require('gulp-json-transform');
 const { getDoorJSON } = require('./gulpfile.door');
+const { getFenceJSON } = require("./gulpfile.fence");
 
 
 const worldsFolderName = useMinecraftDedicatedServer ? "worlds" : "minecraftWorlds";
@@ -57,9 +58,19 @@ function build_doors() {
     .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/doors/'))
 }
 
+
+function build_fences() {
+  return gulp.src("gens/fences/*.json")
+    .pipe(jsonTransform(function (data, file) {
+      return getFenceJSON(data);
+    }))
+    .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/fences/'))
+}
+
+
 const copy_content = gulp.parallel(copy_behavior_packs, copy_resource_packs);
 
-const buildDoors = gulp.parallel(build_doors);
+const buildDoors = gulp.parallel(build_doors, build_fences);
 
 function compile_scripts() {
   return gulp
