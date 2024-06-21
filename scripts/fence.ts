@@ -6,6 +6,20 @@ const fences :string[]= [
 ]    
 
 
+const rotations = {
+    "north":0,
+    "east":1,
+    "south":2,
+    "west":3
+}
+
+const ori_states = [
+    "citycrafter:n",
+    "citycrafter:e",
+    "citycrafter:s",
+    "citycrafter:w"
+]
+
 
 function UpdateFence(block:Block) {
     system.run(()=>{
@@ -25,6 +39,7 @@ function UpdateFence(block:Block) {
             "citycrafter:w":false,
             "citycrafter:freeze":false,
         }
+        
         if (block.north()?.isValid() && (!block.north()?.isAir && !block.north()?.isLiquid)) {
             states["citycrafter:n"] = true;
         }
@@ -37,7 +52,9 @@ function UpdateFence(block:Block) {
         if (block.west()?.isValid() && (!block.west()?.isAir && !block.west()?.isLiquid)) {
             states["citycrafter:w"] = true;
         }
-        block.setPermutation(BlockPermutation.resolve(block.typeId, states))
+        let perm = BlockPermutation.resolve(block.typeId, states).withState("minecraft:cardinal_direction", "north")
+
+        block.setPermutation(perm)
     });
 }
 

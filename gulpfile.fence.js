@@ -1,10 +1,20 @@
+const orientations= ["north", "east", "south", "west"]
 
-function getDoorPermutation(data, north, east, west, south) {
+function getDoorPermutation(data,facing, north, east, west, south) {
 
     let mx = east ? -8 : -2, mz = north ? -8 : -2;
     let Mx = west ? 8 : 2, Mz = south ? 8 : 2;
+    
+    const rots = {
+        "north": 0,
+        "east": -90,
+        "west": 90,
+        "south": 180
+      };
+    const rotY = rots[facing];
+
     const perm = {
-        "condition": `q.block_state('citycrafter:n') == ${north} && q.block_state('citycrafter:s') == ${south} && q.block_state('citycrafter:w') == ${west} && q.block_state('citycrafter:e') == ${east}`,
+        "condition": `q.block_state('minecraft:cardinal_direction') == '${facing}'  && q.block_state('citycrafter:n') == ${north} && q.block_state('citycrafter:s') == ${south} && q.block_state('citycrafter:w') == ${west} && q.block_state('citycrafter:e') == ${east}`,
         "components": {
             "minecraft:collision_box": {
                 "origin": [
@@ -29,12 +39,14 @@ function getDoorPermutation(data, north, east, west, south) {
                     16,
                     Mz-mz
                 ]
-            }
+            },
+            "minecraft:transformation": { "rotation": [0, rotY, 0] }
         }
     };
 
     return perm;
 }
+
 
 function getFenceJSON(data) {
 
@@ -42,7 +54,16 @@ function getFenceJSON(data) {
     ]
     for (let i = 0; i < 16; i++) {
         permutations.push(
-            getDoorPermutation(data, (i & 8) != 0, (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+            getDoorPermutation(data, "north", (i & 8) != 0, (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+        );
+        permutations.push(
+            getDoorPermutation(data, "east", (i & 8) != 0, (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+        );
+        permutations.push(
+            getDoorPermutation(data, "south", (i & 8) != 0, (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
+        );
+        permutations.push(
+            getDoorPermutation(data, "west", (i & 8) != 0, (i & 4) != 0, (i & 2) != 0, (i & 1) != 0)
         );
     }
 
@@ -63,7 +84,15 @@ function getFenceJSON(data) {
                     "citycrafter:s": [false, true],
                     "citycrafter:w": [false, true],
                     "citycrafter:freeze": [false, true],
+                },
+                "traits": {
+                    "minecraft:placement_direction": {
+                        "enabled_states": [
+                            "minecraft:cardinal_direction"
+                        ]
+                    }
                 }
+            
             },
             "components": {
                 "minecraft:geometry": {
