@@ -82,7 +82,10 @@ function getDoorPermutation(data, facing, upper_block_bit, door_hinge_bit, open_
           //   "origin": [-8, 0, -8],
           //   "size": [16, 16, 3]
           // },
-          "minecraft:collision_box": false,
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 16, 3]
+          },
           "minecraft:selection_box": {
             "origin": [-8, 0, -8],
             "size": [16, 16, 3]
