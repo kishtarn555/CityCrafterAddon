@@ -68,3 +68,4 @@ tile.citycrafter:white_bricks.name=Ladrillos blancos
 tile.citycrafter:false_block.name=Bloque falso
 tile.citycrafter:stair_upstep.name=Collider para peldaño superior
 citycrafter.up_step.item.name=Collider para peldaño superior
+citycrafter.false_block.item.name=Bloque falso

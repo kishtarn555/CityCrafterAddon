@@ -68,4 +68,4 @@ tile.citycrafter:white_bricks.name=White bricks
 tile.citycrafter:false_block.name=False block
 tile.citycrafter:stair_upstep.name=Top step collider
 citycrafter.up_step.item.name=Top step collider
-
+citycrafter.false_block.item.name=False block

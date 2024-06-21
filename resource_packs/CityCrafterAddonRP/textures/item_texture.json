@@ -4,6 +4,9 @@
 	"texture_data": {
 		"citycrafter_upstep": {
 			"textures": "textures/items/citycrafter/up_step"
+		},
+		"citycrafter_false_block": {
+			"textures": "textures/items/citycrafter/false_block"
 		}
 	}
 }
