@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "citycrafter:false_block",
+            "menu_category": {
+                "category": "construction",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:light_dampening": 0,
+            "minecraft:geometry": "geometry.citycrafter_none",
+            "minecraft:material_instances": {
+                "*": {"texture": "grass"}
+            },
+            "minecraft:collision_box" :false
+        }
+    }
+}
