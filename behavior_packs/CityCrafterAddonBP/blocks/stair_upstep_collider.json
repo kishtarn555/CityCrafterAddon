@@ -4,8 +4,7 @@
         "description": {
             "identifier": "citycrafter:stair_upstep",
             "menu_category": {
-                "group":"itemGroup.name.stairs",
-                "category": "construction",
+                "category": "none",
                 "is_hidden_in_commands": false
             },
             "traits": {
@@ -35,7 +34,7 @@
                     -8,0,-8
                 ],
                 "size": [
-                    16,1,8
+                    16,4,8
                 ]
             }
         },

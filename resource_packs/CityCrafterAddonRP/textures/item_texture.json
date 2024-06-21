@@ -1,5 +1,9 @@
 {
 	"resource_pack_name": "CityCrafterAddon",
 	"texture_name": "atlas.items",
-	"texture_data": {}
+	"texture_data": {
+		"citycrafter_upstep": {
+			"textures": "textures/items/citycrafter/up_step"
+		}
+	}
 }

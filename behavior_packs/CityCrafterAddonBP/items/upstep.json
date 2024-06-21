@@ -1,0 +1,25 @@
+{  
+  "format_version": "1.20.30",  
+  "minecraft:item": {  
+    "description": {  
+      "identifier": "citycrafter:stair_up_step",  
+      "menu_category": {  
+        "group": "itemGroup.name.stairs",  
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }  
+    },  
+    "components": {  
+      "minecraft:max_stack_size": 64,  
+      "minecraft:icon": {  
+        "texture": "citycrafter_upstep"  
+      },
+      "minecraft:display_name": {  
+        "value": "citycrafter.up_step.item.name"
+      }, 
+      "minecraft:block_placer": {
+        "block": "citycrafter:stair_upstep"
+      }
+    }
+  }
+}

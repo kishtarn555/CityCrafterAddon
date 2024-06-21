@@ -67,3 +67,4 @@ tile.citycrafter:train_track_diagonal_b.name=Left Diagonal Train track
 tile.citycrafter:white_bricks.name=Ladrillos blancos
 tile.citycrafter:false_block.name=Bloque falso
 tile.citycrafter:stair_upstep.name=Collider para peldaño superior
+citycrafter.up_step.item.name=Collider para peldaño superior
