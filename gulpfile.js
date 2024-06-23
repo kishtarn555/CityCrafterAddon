@@ -18,6 +18,7 @@ const { getDoorJSON } = require('./gulpfile.door');
 const { getFenceJSON } = require("./gulpfile.fence");
 const { getTrapdoorJSON } = require("./gulpfile.trapdoor");
 const { getSlabJSON } = require("./gulpfile.slab");
+const { getStairsJSON } = require("./gulpfile.stairs");
 
 
 const worldsFolderName = useMinecraftDedicatedServer ? "worlds" : "minecraftWorlds";
@@ -83,11 +84,18 @@ function build_slabs() {
     }))
     .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/slabs/'))
 }
+function build_stairs() {
+  return gulp.src("gens/stairs/*.json")
+    .pipe(jsonTransform(function (data, file) {
+      return getStairsJSON(data);
+    }))
+    .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/slabs/'))
+}
 
 
 const copy_content = gulp.parallel(copy_behavior_packs, copy_resource_packs);
 
-const buildBlocks = gulp.parallel(build_doors, build_fences, build_trapdoors, build_slabs);
+const buildBlocks = gulp.parallel(build_doors, build_fences, build_trapdoors, build_slabs, build_stairs);
 
 function compile_scripts() {
   return gulp
