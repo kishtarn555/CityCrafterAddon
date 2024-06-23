@@ -104,6 +104,9 @@
 		"cc_black_door_top": {
 			"textures": "textures/blocks/doors/black_door_top"
 		},
+		"cc_woody_trapdoor": {
+			"textures": "textures/blocks/trapdoor/woody_trapdoor"
+		},
 		"cc_planks_oak": {
 			"textures": "textures/blocks/planks_oak"
 		},

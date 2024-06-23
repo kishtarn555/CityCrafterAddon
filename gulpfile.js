@@ -16,6 +16,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const jsonTransform = require('gulp-json-transform');
 const { getDoorJSON } = require('./gulpfile.door');
 const { getFenceJSON } = require("./gulpfile.fence");
+const { getTrapdoorJSON } = require("./gulpfile.trapdoor");
 
 
 const worldsFolderName = useMinecraftDedicatedServer ? "worlds" : "minecraftWorlds";
@@ -67,10 +68,18 @@ function build_fences() {
     .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/fences/'))
 }
 
+function build_trapdoors() {
+  return gulp.src("gens/trapdoors/*.json")
+    .pipe(jsonTransform(function (data, file) {
+      return getTrapdoorJSON(data);
+    }))
+    .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/trapdoors/'))
+}
+
 
 const copy_content = gulp.parallel(copy_behavior_packs, copy_resource_packs);
 
-const buildDoors = gulp.parallel(build_doors, build_fences);
+const buildBlocks = gulp.parallel(build_doors, build_fences, build_trapdoors);
 
 function compile_scripts() {
   return gulp
@@ -95,7 +104,7 @@ function compile_scripts() {
     .pipe(gulp.dest("build/behavior_packs/" + bpfoldername + "BP/scripts"));
 }
 
-const build = gulp.series(clean_build, copy_content, buildDoors, compile_scripts);
+const build = gulp.series(clean_build, copy_content, buildBlocks, compile_scripts);
 
 function clean_localmc(callbackFunction) {
   if (!bpfoldername || !bpfoldername.length || bpfoldername.length < 2) {
