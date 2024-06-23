@@ -21,6 +21,13 @@ tile.citycrafter:concrete_off_white_pink.name=Off white concrete
 
 tile.citycrafter:side_street_marking.name=Decal white side-marking
 tile.citycrafter:slab_side_street_marking.name=Slab decal white side-marking
+tile.citycrafter:side_street_marking_yellow.name=Decal yellow side-marking
+tile.citycrafter:slab_side_street_marking_yellow.name=Slab decal yellow side-marking
+
+tile.citycrafter:sunken_side_street_marking.name=Sunken Decal white side-marking
+tile.citycrafter:sunken_slab_side_street_marking.name=Sunken Slab decal white side-marking
+tile.citycrafter:sunken_side_street_marking_yellow.name=Sunken Decal yellow side-marking
+tile.citycrafter:sunken_slab_side_street_marking_yellow.name=Sunken Slab decal yellow side-marking
 
 tile.citycrafter:white_concrete_corner_fence.name=White concrete corner fence
 tile.citycrafter:white_concrete_fence.name=White concrete fence
@@ -59,13 +66,40 @@ tile.citycrafter:concrete_aqua_thin_wall.name=Aqua Concrete Thin wall
 tile.citycrafter:concrete_pale_blue_thin_wall.name=Pale blue Concrete Thin wall
 tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pale yellow Concrete Thin wall
 
+tile.citycrafter:mushroom_block_thin_wall.name=Mushroom Stem Thin wall
+
 tile.citycrafter:train_track.name=Train track
 tile.citycrafter:train_track_diagonal_full.name=Diagonal Train track
 tile.citycrafter:train_track_diagonal.name=Right Diagonal Train track
 tile.citycrafter:train_track_diagonal_b.name=Left Diagonal Train track
 
+tile.citycrafter:sunken_stone.name=Sunken Stone
+tile.citycrafter:sunken_stone_slab.name=Sunken stone slab
+
+tile.citycrafter:curb_weed.name=Weeds
+tile.citycrafter:bougainvillea.name=Bougainvillea
+
+tile.citycrafter:iron_gate2.name=Iron Gate Door
+tile.citycrafter:woody_door.name=Wood Home Door
+tile.citycrafter:arch_door.name=Door with Arch Window
+tile.citycrafter:black_door.name=Black Door
+
 tile.citycrafter:white_bricks.name=White bricks
 tile.citycrafter:false_block.name=False block
 tile.citycrafter:stair_upstep.name=Top step collider
+
+tile.citycrafter:warped_plank_carpet.name=Warped Planks Carpet
+tile.citycrafter:spruce_plank_carpet.name=Spruce Planks Carpet
+tile.citycrafter:oak_plank_carpet.name=Oak Planks Carpet
+tile.citycrafter:mangrove_plank_carpet.name=Mangrove Planks Carpet
+tile.citycrafter:jungle_plank_carpet.name=Jungle Planks Carpet
+tile.citycrafter:cherry_plank_carpet.name=Cherry Planks Carpet
+tile.citycrafter:birch_plank_carpet.name=Birch Planks Carpet
+tile.citycrafter:big_oak_plank_carpet.name=Dark Oak Planks Carpet
+tile.citycrafter:acacia_plank_carpet.name=Acacia Planks Carpet
+tile.citycrafter:crimson_plank_carpet.name=Crimson Planks Carpet
+tile.citycrafter:anvil_carpet.name=Anvil Carpet
+tile.citycrafter:glass_carpet.name=Glass Carpet
+
 citycrafter.up_step.item.name=Top step collider
 citycrafter.false_block.item.name=False block

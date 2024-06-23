@@ -21,6 +21,14 @@ tile.citycrafter:concrete_off_white_pink.name=Concreto blanco rosado
 
 tile.citycrafter:side_street_marking.name=Calcomanía marca lateral blanca
 tile.citycrafter:slab_side_street_marking.name=Losa de Calcomanía marca lateral blanca 
+tile.citycrafter:side_street_marking_yellow.name=Calcomanía marca lateral amarilla
+tile.citycrafter:slab_side_street_marking_yellow.name=Losa de Calcomanía marca lateral amarilla
+
+tile.citycrafter:sunken_side_street_marking.name=Calcomanía marca lateral blanca hundida
+tile.citycrafter:sunken_slab_side_street_marking.name=Losa de Calcomanía marca lateral blanca hundida
+tile.citycrafter:sunken_side_street_marking_yellow.name=Calcomanía marca lateral amarilla hundida
+tile.citycrafter:sunken_slab_side_street_marking_yellow.name=Losa de Calcomanía marca lateral amarilla hundida
+
 
 tile.citycrafter:white_concrete_corner_fence.name=Valla de concreto blanco para esquinas
 tile.citycrafter:white_concrete_fence.name=Valla de concreto blanco
@@ -51,21 +59,49 @@ tile.citycrafter:concrete_pink_thin_wall.name=Pared delgada de concreto rosa
 tile.citycrafter:concrete_lime_thin_wall.name=Pared delgada de concreto verde lima
 tile.citycrafter:concrete_yellow_thin_wall.name=Pared delgada de concreto amarillo
 tile.citycrafter:concrete_light_blue_thin_wall.name=Pared delgada de concreto azul claro
-tile.citycrafter:concrete_magenta_thin_wall.name=Pare delgada de concreto magenta
+tile.citycrafter:concrete_magenta_thin_wall.name=Pared delgada de concreto magenta
 tile.citycrafter:concrete_orange_thin_wall.name=Pared delgada de concreto naranja
 tile.citycrafter:concrete_white_thin_wall.name=Pared delgada de concreto blanco
 
-tile.citycrafter:concrete_aqua_thin_wall.name=Aqua Concrete Thin wall
-tile.citycrafter:concrete_pale_blue_thin_wall.name=Pale blue Concrete Thin wall
-tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pale yellow Concrete Thin wall
+tile.citycrafter:concrete_aqua_thin_wall.name=Pared delgada de concreto aguamarina
+tile.citycrafter:concrete_pale_blue_thin_wall.name=Pared delgada de concreto azul pálido
+tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pared delgada de concreto amarillo pálido
 
-tile.citycrafter:train_track.name=Train track
-tile.citycrafter:train_track_diagonal_full.name=Diagonal Train track
-tile.citycrafter:train_track_diagonal.name=Right Diagonal Train track
-tile.citycrafter:train_track_diagonal_b.name=Left Diagonal Train track
+tile.citycrafter:black_door.name=Pared delgada de tallo de hongo
+
+tile.citycrafter:train_track.name=Vía de tren
+tile.citycrafter:train_track_diagonal_full.name=Vía de tren diagonal
+tile.citycrafter:train_track_diagonal.name=Vía de tren diagonal derecha
+tile.citycrafter:train_track_diagonal_b.name=Vía de tren diagonal izquierda
+
+tile.citycrafter:sunken_stone.name=Piedra hundida
+tile.citycrafter:sunken_stone_slab.name=Losa de piedra hundida
+
+tile.citycrafter:curb_weed.name=Hierba
+tile.citycrafter:bougainvillea.name=Buganvilias
+
+tile.citycrafter:iron_gate2.name=Puerta de barrotes de hierro
+tile.citycrafter:woody_door.name=Puerta de madera hogareña
+tile.citycrafter:arch_door.name=Puerta con ventana semi circular
+tile.citycrafter:black_door.name=Puerta negra
 
 tile.citycrafter:white_bricks.name=Ladrillos blancos
 tile.citycrafter:false_block.name=Bloque falso
 tile.citycrafter:stair_upstep.name=Collider para peldaño superior
+
+tile.citycrafter:warped_plank_carpet.name=Alfombra de tablones deformados
+tile.citycrafter:spruce_plank_carpet.name=Alfombra de tablones de abeto
+tile.citycrafter:oak_plank_carpet.name=Alfombra de tablones de roble
+tile.citycrafter:mangrove_plank_carpet.name=Alfombra de tablones de manglar
+tile.citycrafter:jungle_plank_carpet.name=Alfombra de tablones de jungla
+tile.citycrafter:cherry_plank_carpet.name=Alfombra de tablones de cerezo
+tile.citycrafter:birch_plank_carpet.name=Alfombra de tablones de abedul
+tile.citycrafter:big_oak_plank_carpet.name=Alfombra de tablones de roble oscuro
+tile.citycrafter:acacia_plank_carpet.name=Alfombra de tablones de acacia
+tile.citycrafter:crimson_plank_carpet.name=Alfombra de tablones escarlata
+tile.citycrafter:anvil_carpet.name=Alfombra de yunque
+tile.citycrafter:glass_carpet.name=Alfombra de tablones de cristal
+
 citycrafter.up_step.item.name=Collider para peldaño superior
 citycrafter.false_block.item.name=Bloque falso
+
