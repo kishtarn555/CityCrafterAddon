@@ -1,0 +1,25 @@
+{  
+  "format_version": "1.20.30",  
+  "minecraft:item": {  
+    "description": {  
+      "identifier": "citycrafter:woody_door",  
+      "menu_category": {  
+        "group": "itemGroup.name.door",  
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }  
+    },  
+    "components": {  
+      "minecraft:max_stack_size": 64,  
+      "minecraft:icon": {  
+        "texture": "citycrafter_woody_door"  
+      },
+      "minecraft:display_name": {  
+        "value": "citycrafter.woody_door.item.name"
+      }, 
+      "minecraft:block_placer": {
+        "block": "citycrafter:woody_door"
+      }
+    }
+  }
+}

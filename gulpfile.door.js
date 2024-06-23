@@ -61,8 +61,8 @@ function getDoorPermutation(data, facing, upper_block_bit, door_hinge_bit, open_
         "description": {
           "identifier": data.identifier,
           "menu_category": {
-            "category": "construction",
-            "group": "itemGroup.name.door",
+            "category": "none",
+            // "group": "itemGroup.name.door",
             "is_hidden_in_commands": false
           },
           "traits": {

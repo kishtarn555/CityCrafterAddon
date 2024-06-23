@@ -7,6 +7,18 @@
 		},
 		"citycrafter_false_block": {
 			"textures": "textures/items/citycrafter/false_block"
+		},
+		"citycrafter_iron_gate": {
+			"textures": "textures/items/citycrafter/iron_door"
+		},
+		"citycrafter_woody_door": {
+			"textures": "textures/items/citycrafter/woody_door"
+		},
+		"citycrafter_arch_door": {
+			"textures": "textures/items/citycrafter/arch_door"
+		},
+		"citycrafter_black_door": {
+			"textures": "textures/items/citycrafter/black_door"
 		}
 	}
 }

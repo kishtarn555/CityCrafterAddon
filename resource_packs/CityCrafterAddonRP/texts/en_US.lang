@@ -105,3 +105,7 @@ tile.citycrafter:microwave.name=Microwave
 
 citycrafter.up_step.item.name=Top step collider
 citycrafter.false_block.item.name=False block
+citycrafter.iron_gate.item.name=Iron Gate Door
+tile.citycrafter:woody_door.name=Puerta de madera hogareña
+tile.citycrafter:arch_door.name=Puerta con ventana semi circular
+tile.citycrafter:black_door.name=Puerta negra
