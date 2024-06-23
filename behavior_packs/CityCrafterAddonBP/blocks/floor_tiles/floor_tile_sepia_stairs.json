@@ -20,8 +20,8 @@
     },
     "components": {
       "minecraft:collision_box": {        
-        "origin": [-8, 0, -4],
-        "size": [16, 9, 12]
+        "origin": [-8, 0, -7.9],
+        "size": [16, 8, 15.9]
       
       },
       "minecraft:geometry":"geometry.cc_stair",
