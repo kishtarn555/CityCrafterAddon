@@ -101,5 +101,7 @@ tile.citycrafter:crimson_plank_carpet.name=Crimson Planks Carpet
 tile.citycrafter:anvil_carpet.name=Anvil Carpet
 tile.citycrafter:glass_carpet.name=Glass Carpet
 
+tile.citycrafter:microwave.name=Microwave
+
 citycrafter.up_step.item.name=Top step collider
 citycrafter.false_block.item.name=False block

@@ -102,6 +102,8 @@ tile.citycrafter:crimson_plank_carpet.name=Alfombra de tablones escarlata
 tile.citycrafter:anvil_carpet.name=Alfombra de yunque
 tile.citycrafter:glass_carpet.name=Alfombra de tablones de cristal
 
+tile.citycrafter:microwave.name=Microondas
+
 citycrafter.up_step.item.name=Collider para peldaño superior
 citycrafter.false_block.item.name=Bloque falso
 
