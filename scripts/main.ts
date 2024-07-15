@@ -2,10 +2,12 @@ import { world, system, BlockTypes, BlockPermutation, BlockStates, StructureRota
 import { registerDoorListener } from "./door";
 import { registerFenceListener } from "./fence";
 import { registerTrapdoorListener } from "./trapdoor";
+import { registerBarsListener } from "./iron_bars_wall";
 
 registerDoorListener();
 registerFenceListener();
 registerTrapdoorListener();
+registerBarsListener();
 
 
 

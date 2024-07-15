@@ -7,12 +7,17 @@ tile.citycrafter:stove.name=Estufa
 tile.citycrafter:floor_tile_blue.name=Losas de cerámica azul 
 tile.citycrafter:floor_tile.name=Losas de cerámica beige
 tile.citycrafter:floor_tile_sepia.name=Losas de cerámica crema
+
 tile.citycrafter:floor_tile_sepia_stairs.name=Escaleras de cerámica crema
+tile.citycrafter:end_stone_stairs.name=Escaleras de piedra del End
+
 tile.citycrafter:glass_thin_wall.name=Pared delgada de cristal
 tile.citycrafter:plastic_glass_thin_wall.name=Pared delgada de cristal privado
 tile.citycrafter:iron_block_thin_wall.name=Pared delgada de bloque de hierro
 tile.citycrafter:granite_tile.name=Losas de granito
+
 tile.citycrafter:slab_clay.name=Losa de arcilla
+tile.citycrafter:slab_end_stone.name=Losa de piedra de End
 
 tile.citycrafter:concrete_aqua.name=Concreto aguamarina
 tile.citycrafter:concrete_pale_blue.name=Concrete azul pálido

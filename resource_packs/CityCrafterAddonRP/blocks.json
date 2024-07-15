@@ -97,6 +97,11 @@
 	},
 	"citycrafter:white_bricks": {
 		"textures":"white_bricks"
+	},
+	"citycrafter:slab_grass": {
+		"isotropic":true,
+		"textures":"cc_grass",
+		"sound": "grass"
 	}
 
 }

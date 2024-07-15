@@ -1,0 +1,133 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "citycrafter:iron_bars_wall",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": false
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ],
+          "y_rotation_offset": 180
+        }
+      },
+      "states": {
+        "citycrafter:e": [
+          false,
+          true
+        ],
+        "citycrafter:w": [
+          false,
+          true
+        ],
+        "citycrafter:freeze": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cc_iron_bars",
+        "bone_visibility": {
+          "left_inner": "q.block_state('citycrafter:e')",
+          "right_inner": "q.block_state('citycrafter:w')",
+          "middle": "q.block_state('citycrafter:e') != q.block_state('citycrafter:w')",
+          "single": "!q.block_state('citycrafter:e') && !q.block_state('citycrafter:w')"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "iron_bars",
+          "render_method": "blend"
+        },
+        "up": {
+          "texture": "cc_iron_bars_side",
+          "render_method": "blend"
+        },
+        "down": {
+          "texture": "cc_iron_bars_side",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          6
+        ],
+        "size": [
+          16,
+          16,
+          2
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          6
+        ],
+        "size": [
+          16,
+          16,
+          2
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

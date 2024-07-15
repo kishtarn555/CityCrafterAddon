@@ -19,6 +19,9 @@
 		},
 		"citycrafter_black_door": {
 			"textures": "textures/items/citycrafter/black_door"
+		},
+		"citycrafter_iron_bars_wall": {
+			"textures": "textures/items/citycrafter/iron_bars_wall"
 		}
 	}
 }

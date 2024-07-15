@@ -1,0 +1,24 @@
+{  
+  "format_version": "1.20.30",  
+  "minecraft:item": {  
+    "description": {  
+      "identifier": "citycrafter:iron_bars_wall",  
+      "menu_category": {  
+        "category": "construction", 
+        "is_hidden_in_commands": false 
+      }  
+    },  
+    "components": {  
+      "minecraft:max_stack_size": 64,  
+      "minecraft:icon": {  
+        "texture": "citycrafter_iron_bars_wall"  
+      },
+      "minecraft:display_name": {  
+        "value": "citycrafter.iron_bars_wall.item.name"
+      }, 
+      "minecraft:block_placer": {
+        "block": "citycrafter:iron_bars_wall"
+      }
+    }
+  }
+}

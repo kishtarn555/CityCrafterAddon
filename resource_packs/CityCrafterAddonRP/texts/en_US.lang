@@ -7,12 +7,17 @@ tile.citycrafter:stove.name=Stove
 tile.citycrafter:floor_tile_blue.name=Blue ceramic tile
 tile.citycrafter:floor_tile.name=Beige ceramic tile
 tile.citycrafter:floor_tile_sepia.name=Cream ceramic tile
+
 tile.citycrafter:floor_tile_sepia_stairs.name=Cream ceramic tile stairs
+tile.citycrafter:end_stone_stairs.name=End Stone Stairs
+
 tile.citycrafter:glass_thin_wall.name=Glass thin wall
 tile.citycrafter:plastic_glass_thin_wall.name=Privacy glass thin wall
 tile.citycrafter:iron_block_thin_wall.name=Iron Block thin wall
 tile.citycrafter:granite_tile.name=Granite tiles
+
 tile.citycrafter:slab_clay.name=Clay slab
+tile.citycrafter:slab_end_stone.name=End Stone Slab
 
 tile.citycrafter:concrete_aqua.name=Aqua concrete
 tile.citycrafter:concrete_pale_blue.name=Pale blue concrete

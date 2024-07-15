@@ -124,6 +124,15 @@
 		},
 		"cc_planks_big_oak": {
 			"textures": "textures/blocks/planks_big_oak"
+		},
+		"cc_iron_bars_side": {
+			"textures": "textures/blocks/cc_iron_bars_side"
+		},
+		"cc_grass": {				
+			"textures" : {
+				"overlay_color" : "#92BC58",
+				"path" : "textures/blocks/grass_top"
+			}
 		}
 	}
 }
