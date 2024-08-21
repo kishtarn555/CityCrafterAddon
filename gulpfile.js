@@ -14,11 +14,11 @@ const os = require("os");
 const spawn = require("child_process").spawn;
 const sourcemaps = require("gulp-sourcemaps");
 const jsonTransform = require('gulp-json-transform');
-const { getDoorJSON } = require('./gulpfile.door');
-const { getFenceJSON } = require("./gulpfile.fence");
-const { getTrapdoorJSON } = require("./gulpfile.trapdoor");
-const { getSlabJSON } = require("./gulpfile.slab");
-const { getStairsJSON } = require("./gulpfile.stairs");
+const { getDoorJSON } = require('./gulp/gulpfile.door');
+const { getFenceJSON } = require("./gulp/gulpfile.fence");
+const { getTrapdoorJSON } = require("./gulp/gulpfile.trapdoor");
+const { getSlabJSON } = require("./gulp/gulpfile.slab");
+const { getStairsJSON } = require("./gulp/gulpfile.stairs");
 
 
 const worldsFolderName = useMinecraftDedicatedServer ? "worlds" : "minecraftWorlds";
