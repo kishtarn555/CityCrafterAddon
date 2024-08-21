@@ -44,17 +44,17 @@ function clean_build(callbackFunction) {
 }
 
 function copy_behavior_packs() {
-  return gulp.src(["behavior_packs/**/*"]).pipe(gulp.dest("build/behavior_packs"));
+  return gulp.src(["behavior_packs/**/*"], { encoding:false} ).pipe(gulp.dest("build/behavior_packs"));
 }
 
 function copy_resource_packs() {
-  return gulp.src(["resource_packs/**/*"]).pipe(gulp.dest("build/resource_packs"));
+  return gulp.src(["resource_packs/**/*"], { encoding:false} ).pipe(gulp.dest("build/resource_packs"));
 }
 
 
 
 function build_doors() {
-  return gulp.src("gens/doors/*.json")
+  return gulp.src("gens/doors/*.json", { encoding:false} )
     .pipe(jsonTransform(function (data, file) {
       return getDoorJSON(data);
     }))
@@ -63,7 +63,7 @@ function build_doors() {
 
 
 function build_fences() {
-  return gulp.src("gens/fences/*.json")
+  return gulp.src("gens/fences/*.json", { encoding:false} )
     .pipe(jsonTransform(function (data, file) {
       return getFenceJSON(data);
     }))
@@ -71,21 +71,21 @@ function build_fences() {
 }
 
 function build_trapdoors() {
-  return gulp.src("gens/trapdoors/*.json")
+  return gulp.src("gens/trapdoors/*.json", { encoding:false} )
     .pipe(jsonTransform(function (data, file) {
       return getTrapdoorJSON(data);
     }))
     .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/trapdoors/'))
 }
 function build_slabs() {
-  return gulp.src("gens/slabs/*.json")
+  return gulp.src("gens/slabs/*.json", { encoding:false} )
     .pipe(jsonTransform(function (data, file) {
       return getSlabJSON(data);
     }))
     .pipe(gulp.dest('./build/behavior_packs/' + bpfoldername + 'BP/blocks/slabs/'))
 }
 function build_stairs() {
-  return gulp.src("gens/stairs/*.json")
+  return gulp.src("gens/stairs/*.json", { encoding:false} )
     .pipe(jsonTransform(function (data, file) {
       return getStairsJSON(data);
     }))
@@ -144,13 +144,13 @@ function clean_localmc(callbackFunction) {
 function deploy_localmc_behavior_packs() {
   console.log("Deploying to '" + mcdir + "development_behavior_packs/" + bpfoldername + "BP'");
   return gulp
-    .src(["build/behavior_packs/" + bpfoldername + "BP/**/*"])
+    .src(["build/behavior_packs/" + bpfoldername + "BP/**/*"], { encoding:false})
     .pipe(gulp.dest(mcdir + "development_behavior_packs/" + bpfoldername + "BP"));
 }
 
 function deploy_localmc_resource_packs() {
   return gulp
-    .src(["build/resource_packs/" + bpfoldername + "RP/**/*"])
+    .src(["build/resource_packs/" + bpfoldername + "RP/**/*"],  { encoding:false})
     .pipe(gulp.dest(mcdir + "development_resource_packs/" + bpfoldername + "RP"));
 }
 
@@ -256,29 +256,31 @@ function clean_dev_world_backup(callbackFunction) {
 function backup_dev_world() {
   console.log("Copying world '" + getDevWorldPath() + "' to '" + getDevWorldBackupPath() + "'");
   return gulp
-    .src([getTargetWorldPath() + "/**/*"])
+    .src([getTargetWorldPath() + "/**/*"],  { encoding:false})
     .pipe(gulp.dest(getDevWorldBackupPath() + "/worlds/" + activeWorldFolderName));
 }
 
 function deploy_localmc_config() {
   console.log("Copying world 'config/' to '" + getTargetConfigPath() + "'");
-  return gulp.src([getDevConfigPath() + "/**/*"]).pipe(gulp.dest(getTargetConfigPath()));
+  return gulp
+      .src([getDevConfigPath() + "/**/*"],  { encoding:false})
+      .pipe(gulp.dest(getTargetConfigPath()));
 }
 
 function deploy_localmc_world() {
   console.log("Copying world 'worlds/default/' to '" + getTargetWorldPath() + "'");
-  return gulp.src([getDevWorldPath() + "/**/*"]).pipe(gulp.dest(getTargetWorldPath()));
+  return gulp.src([getDevWorldPath() + "/**/*"], { encoding:false} ).pipe(gulp.dest(getTargetWorldPath()));
 }
 
 function ingest_localmc_world() {
   console.log("Ingesting world '" + getTargetWorldPath() + "' to '" + getDevWorldPath() + "'");
-  return gulp.src([getTargetWorldPath() + "/**/*"]).pipe(gulp.dest(getDevWorldPath()));
+  return gulp.src([getTargetWorldPath() + "/**/*"], { encoding:false} ).pipe(gulp.dest(getDevWorldPath()));
 }
 
 function backup_localmc_world() {
   console.log("Copying world '" + getTargetWorldPath() + "' to '" + getTargetWorldBackupPath() + "/'");
   return gulp
-    .src([getTargetWorldPath() + "/**/*"])
+    .src([getTargetWorldPath() + "/**/*"], { encoding:false} )
     .pipe(gulp.dest(getTargetWorldBackupPath() + "/" + activeWorldFolderName));
 }
 
