@@ -97,6 +97,9 @@ function getDoorPermutation(data, facing, upper_block_bit, door_hinge_bit, open_
               }
             ]
           },
+          "minecraft:custom_components": [
+            "cc:door"
+          ],
           "tag:cc_door": {}
         },
         "permutations": permutations

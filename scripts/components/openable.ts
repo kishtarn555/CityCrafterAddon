@@ -2,7 +2,7 @@ import { BlockComponentPlayerInteractEvent, BlockCustomComponent } from "@minecr
 
 const OPEN_STATE = "cc:open_bit"
 
-export class Openable implements  BlockCustomComponent {
+export class OpenableComponent implements  BlockCustomComponent {
     onPlayerInteract (arg: BlockComponentPlayerInteractEvent) {
         const block = arg.block;
         const bit = block.permutation.getState(OPEN_STATE)as boolean;

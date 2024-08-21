@@ -1,18 +1,16 @@
 import { world, system, BlockTypes, BlockPermutation, BlockStates, StructureRotation } from "@minecraft/server";
-import { registerDoorListener } from "./door";
 import { registerFenceListener } from "./fence";
-import { registerTrapdoorListener } from "./trapdoor";
 import { registerBarsListener } from "./iron_bars_wall";
-import { Openable } from "./components/openable";
+import { OpenableComponent } from "./components/openable";
+import { DoorComponent } from "./door";
 
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-    initEvent.blockComponentRegistry.registerCustomComponent('cc:openable', new Openable());
+    initEvent.blockComponentRegistry.registerCustomComponent('cc:openable', new OpenableComponent());
+    initEvent.blockComponentRegistry.registerCustomComponent('cc:door', new DoorComponent());
 });
 
-// registerDoorListener();
-// registerFenceListener();
-// registerTrapdoorListener();
+registerFenceListener();
 registerBarsListener();
 
 
