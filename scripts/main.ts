@@ -3,10 +3,16 @@ import { registerDoorListener } from "./door";
 import { registerFenceListener } from "./fence";
 import { registerTrapdoorListener } from "./trapdoor";
 import { registerBarsListener } from "./iron_bars_wall";
+import { Openable } from "./components/openable";
 
-registerDoorListener();
-registerFenceListener();
-registerTrapdoorListener();
+
+world.beforeEvents.worldInitialize.subscribe(initEvent => {
+    initEvent.blockComponentRegistry.registerCustomComponent('cc:openable', new Openable());
+});
+
+// registerDoorListener();
+// registerFenceListener();
+// registerTrapdoorListener();
 registerBarsListener();
 
 

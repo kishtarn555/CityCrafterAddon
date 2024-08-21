@@ -90,6 +90,9 @@ function getTrapdoorJSON(data) {
             "render_method": "blend"
           }
         },
+        "minecraft:custom_components": [
+          "cc:openable"
+        ],
         "tag:cc_trapdoor": {}
       },
       "permutations": permutations
