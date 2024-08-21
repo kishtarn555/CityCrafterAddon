@@ -1,3 +1,4 @@
+const { addComponents } = require("./common.blocks");
 
 function getTrapdoorPermutation(facing, vertical_half, open_bit) {
 
@@ -98,6 +99,7 @@ function getTrapdoorJSON(data) {
       "permutations": permutations
     }
   };
+  addComponents(object, data)
   return object
 }
 

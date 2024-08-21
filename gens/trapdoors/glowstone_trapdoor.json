@@ -1,0 +1,15 @@
+{
+    "identifier": "citycrafter:glowstone_trapdoor",
+    "texture": "glowstone",
+    "components": {
+        "minecraft:light_emission": 15,
+        "minecraft:material_instances": {
+            "*": {
+                "texture": "glowstone",
+                "render_method": "blend",
+                "ambient_occlusion":false,
+                "face_dimming":false
+            }
+        }
+    }
+}
