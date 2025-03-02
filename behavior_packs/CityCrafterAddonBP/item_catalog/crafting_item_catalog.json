@@ -1,0 +1,45 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+       "categories": [
+          {
+             "category_name": "construction",
+             "groups": [
+                {
+                   "group_identifier": {
+                      "icon": "citycrafter:concrete_white_thin_wall",
+                      "name": "citycrafter:itemGroup.name.thin_walls"
+                   },
+                   "items": [
+                      "citycrafter:concrete_white_thin_wall",
+                      "citycrafter:concrete_light_gray_thin_wall",
+                      "citycrafter:concrete_gray_thin_wall",
+                      "citycrafter:concrete_black_thin_wall",
+                      "citycrafter:concrete_brown_thin_wall",
+                      "citycrafter:concrete_red_thin_wall",
+                      "citycrafter:concrete_orange_thin_wall",
+                      "citycrafter:concrete_yellow_thin_wall",
+                      "citycrafter:concrete_pale_yellow_thin_wall",
+                      "citycrafter:concrete_lime_thin_wall",
+                      "citycrafter:concrete_green_thin_wall",
+                      "citycrafter:concrete_cyan_thin_wall",
+                      "citycrafter:concrete_light_blue_thin_wall",
+                      "citycrafter:concrete_pale_blue_thin_wall",
+                      "citycrafter:concrete_blue_thin_wall",
+                      "citycrafter:concrete_purple_thin_wall",
+                      "citycrafter:concrete_magenta_thin_wall",
+                      "citycrafter:concrete_pink_thin_wall",
+                      "citycrafter:mushroom_block_thin_wall",
+                      "citycrafter:iron_block_thin_wall",
+                      "citycrafter:plastic_glass_thin_wall",
+                      "citycrafter:glass_thin_wall"
+
+                   ]
+                }
+               
+
+             ]
+          }
+       ]
+    }
+ }
