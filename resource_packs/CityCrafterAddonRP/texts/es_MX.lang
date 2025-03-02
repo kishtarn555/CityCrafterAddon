@@ -72,7 +72,7 @@ tile.citycrafter:concrete_aqua_thin_wall.name=Pared delgada de concreto aguamari
 tile.citycrafter:concrete_pale_blue_thin_wall.name=Pared delgada de concreto azul pálido
 tile.citycrafter:concrete_pale_yellow_thin_wall.name=Pared delgada de concreto amarillo pálido
 
-tile.citycrafter:black_door.name=Pared delgada de tallo de hongo
+tile.citycrafter:mushroom_block_thin_wall.name=Pared delgada de tallo de hongo
 
 tile.citycrafter:train_track.name=Vía de tren
 tile.citycrafter:train_track_diagonal_full.name=Vía de tren diagonal
