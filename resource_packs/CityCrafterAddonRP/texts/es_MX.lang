@@ -115,3 +115,6 @@ citycrafter.iron_gate.item.name=Puerta de barrotes de hierro
 citycrafter.woody_door.item.name=Puerta de madera hogareña
 citycrafter.arch_door.item.name=Puerta con ventana semi circular
 citycrafter.black_door.item.name=Puerta negra
+
+tile.citycrafter:glowstone_trapdoor.name=Escotilla de piedra luminosa
+tile.citycrafter:woody_trapdoor.name=Escotilla de madera hogareña
